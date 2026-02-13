@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="center">
+<div class="hearts"></div>
+
+
+<div class="envelope-wrapper">
+    <div class="envelope" id="envelope">
+        <div class="letter">
+            <h2>For Linda Afriyea ❤️</h2>
+            <p>Tap to open</p>
+        </div>
+        <div class="flap"></div>
+    </div>
+</div>
+
+<script>
+const envelope = document.getElementById("envelope");
+
+envelope.onclick = ()=>{
+    envelope.classList.add("open");
+
+    setTimeout(()=>{
+        window.location.href = "letter.html";
+    },1500);
+};
+</script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
